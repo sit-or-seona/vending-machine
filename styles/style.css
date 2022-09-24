@@ -1,0 +1,142 @@
+/* Resest */
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, ul, input, button {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+.screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/* Common */
+body {
+    background-color: #EAE8FE;
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    font-size: 9px;
+}
+
+.section-cola {
+    width: 748px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Component */
+.tit-cola {
+    width: 386px;
+    margin: 0 auto 77px;
+}
+
+.tit-cola img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-cola {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(50px, auto);
+    grid-template-areas: 
+    "left   right1"
+    "left   right2"
+    ;
+    gap: 20px 28px;
+}
+
+.cont-machine {
+    background-color: #fff;
+    width: 360px;
+    height: 545px;
+    grid-area: left;
+    padding: 31px 27px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 130px;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.list-items button {
+    width: 94px;
+    height: 100%;
+}
+.list-items button img {
+    height: 65px;
+    display: inline-block;
+}
+
+.price {
+    display: block;
+}
+
+.user-machine {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+}
+
+.user-machine-left {
+    flex-grow: 1;
+    height: 33px;
+}
+
+.user-machine:last-child {
+    height: 106px;
+}
+
+button {
+    width: 94px;
+}
+
+.cont-budget {
+    background-color: #fff;
+    width: 360px;
+    padding: 9px 27px;
+}
+
+.txt-budget {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #EAE8FE;
+}
+
+.cont-gain {
+    background-color: #fff;
+    width: 360px;
+    padding: 31px 27px 28px;
+}
+
+.cont-gain .list-select {
+    background-color: #EAE8FE;
+    height: 364px;
+    margin: 13px 0 6px;
+}
+
+.total {
+    text-align: right;
+}
