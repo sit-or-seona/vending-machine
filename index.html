@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cola Vending Machine</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="section-cola">
@@ -19,59 +22,66 @@
                 <h2 class="screen_out">콜라 자판기</h2>
                 <ul class="list-items">
                     <li><button>
-                        <img src="" alt="">
+                        <img src="images/Original_Cola.png" alt="">
                         Original_Cola
-                        <span class="price">1000원</span>
+                        <span class="txt-price">1000</span>
                     </button></li>
-                    <li><button>
-                        <img src="" alt="">
+                    <li><button class="soldout">
+                        <img src="images/Violet_Cola.png" alt="">
                         Violet_Cola
-                        <span class="price">1000원</span>
+                        <span class="txt-price">1000</span>
                     </button></li>
                     <li><button>
-                        <img src="" alt="">
+                        <img src="images/Yellow_Cola.png" alt="">
                         Yellow_Cola
-                        <span class="price">1000원</span>
+                        <span class="txt-price">1000</span>
                     </button></li>
                     <li><button>
-                        <img src="" alt="">
+                        <img src="images/Cool_Cola.png" alt="">
                         Cool_Cola
-                        <span class="price">1000원</span>
+                        <span class="txt-price">1000</span>
                     </button></li>
                     <li><button>
-                        <img src="" alt="">
+                        <img src="images/Green_Cola.png" alt="">
                         Green_Cola
-                        <span class="price">1000원</span>
+                        <span class="txt-price">1000</span>
                     </button></li>
                     <li><button>
-                        <img src="" alt="">
+                        <img src="images/Orange_Cola.png" alt="">
                         Orange_Cola
-                        <span class="price">1000원</span>
+                        <span class="txt-price">1000</span>
                     </button></li>
                 </ul>
-                <form class="user-machine">
-                    <input class="user-machine-left" type="text" name="" id="" value="잔액 :">
+                <div class="user-machine">
+                    <p class="user-machine-left txt-balance">
+                        잔액 :
+                        <span>1,000원</span>
+                    </p>
                     <button>거스름돈 반환</button>
-                </form>
+                </div>
                 <form class="user-machine">
-                    <input class="user-machine-left" type="text" name="" id="" placeholder="입금액 입력" required>
+                    <input class="user-machine-left txt-deposit" type="text" placeholder="입금액 입력" required>
                     <button>입금</button>
                 </form>
                 <div class="user-machine">
                     <ul class="user-machine-left list-select">
-                        <li>
-                            <figure>
-                                <img src="" alt="">
-                                <figcaption></figcaption>
+                        <li class="card-select">
+                            <figure class="card-select-item">
+                                <img src="images/Original_Cola.png" alt="">
+                                <figcaption>
+                                    Original_Cola
+                                </figcaption>
                             </figure>
-                            <span></span>
+                            <span class="card-select-qty">1</span>
                         </li>
-                        <li>
-                            <figure>
-                                <img src="" alt="">
-                                <figcaption></figcaption>
+                        <li class="card-select">
+                            <figure class="card-select-item">
+                                <img src="images/Green_Cola.png" alt="">
+                                <figcaption>
+                                    Green_Cola
+                                </figcaption>
                             </figure>
-                            <span></span>
+                            <span class="card-select-qty">2</span>
                         </li>
                     </ul>
                     <button>획득</button>
@@ -88,36 +98,44 @@
             <section class="cont-gain">
                 <h2>획득한 음료</h2>
                 <ul class="list-select">
-                    <li>
-                        <figure>
-                            <img src="" alt="">
-                            <figcaption></figcaption>
+                    <li class="card-select">
+                        <figure class="card-select-item">
+                            <img src="images/Original_Cola.png" alt="">
+                            <figcaption>
+                                Original_Cola
+                            </figcaption>
                         </figure>
-                        <span></span>
+                        <span class="card-select-qty">1</span>
                     </li>
-                    <li>
-                        <figure>
-                            <img src="" alt="">
-                            <figcaption></figcaption>
+                    <li class="card-select">
+                        <figure class="card-select-item">
+                            <img src="images/Green_Cola.png" alt="">
+                            <figcaption>
+                                Green_Cola
+                            </figcaption>
                         </figure>
-                        <span></span>
+                        <span class="card-select-qty">2</span>
                     </li>
-                    <li>
-                        <figure>
-                            <img src="" alt="">
-                            <figcaption></figcaption>
+                    <li class="card-select">
+                        <figure class="card-select-item">
+                            <img src="images/Orange_Cola.png" alt="">
+                            <figcaption>
+                                Orange_Cola
+                            </figcaption>
                         </figure>
-                        <span></span>
+                        <span class="card-select-qty">1</span>
                     </li>
-                    <li>
-                        <figure>
-                            <img src="" alt="">
-                            <figcaption></figcaption>
+                    <li class="card-select">
+                        <figure class="card-select-item">
+                            <img src="images/Violet_Cola.png" alt="">
+                            <figcaption>
+                                Violet_Cola
+                            </figcaption>
                         </figure>
-                        <span></span>
+                        <span class="card-select-qty">5</span>
                     </li>
                 </ul>
-                <p class="total">총금액 : 9,000원</p>
+                <p class="txt-total">총금액 : 9,000 원</p>
             </section>
         </section>
         </main>
